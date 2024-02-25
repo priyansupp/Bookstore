@@ -8,7 +8,7 @@ const Books = () => {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState(null)
-  const [selectedCategory, setSelectedCategory] = useState("")
+  const [selectedCategory, setSelectedCategory] = useState("all")
 
   useEffect(() => {
     const fetchData = async () => {
