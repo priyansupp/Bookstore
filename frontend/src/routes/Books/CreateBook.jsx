@@ -62,8 +62,7 @@ const CreateBook = () => {
       return (
         <div>
         <h1>Create your own book</h1>
-        <p>This is where we use NodeJS, Express & MongoDB to Post some data onto the database</p>
-
+        
         {submitted ? (
           <div>
               <h3>Data submitted successfully!</h3>

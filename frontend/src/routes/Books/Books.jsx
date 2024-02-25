@@ -12,6 +12,7 @@ const Books = () => {
 
   useEffect(() => {
     const fetchData = async () => {
+      console.log(selectedCategory);
       try {
         let url = baseUrl;
         if(selectedCategory){
@@ -27,7 +28,7 @@ const Books = () => {
           let jsonData2 = [];
           jsonData1.map(x => {
             if(x.category == selectedCategory) {
-              jsonData2.append(x);
+              jsonData2.push(x);
             }
           });
           setData(jsonData2);
